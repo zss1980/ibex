@@ -34,7 +34,7 @@ window.addEventListener('load', function () {
     bedgeCreated: false,
     bedgeEdite: false,
 
-    delButton: 'Delete',
+    delButton: 'Pick to Delete',
     isDeleted: 0,
     badgeDelete: false,
     delCheckBox:false,
@@ -126,6 +126,7 @@ events: {
 
   'deleted-record': function(data){
     var indexId = this.checkRecordId(data.id);
+    this.delButton = 'Pick to Delete';
 
    if (indexId!=-1) {
     this.records.$remove(this.records[indexId]);
@@ -164,6 +165,7 @@ events: {
       this.deleteRecords=[];
     }else {
       this.delCheckBox= true;
+      this.delButton = 'Delete';
       this.shown=false;
       this.addButton = "Add new";
     }
