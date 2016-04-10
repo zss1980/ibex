@@ -25,7 +25,7 @@
 @section('body')
 <h1>Hello, IBEX!</h1>
 
-<div v-show="<?php if ($current_page->id!=247){echo 'false';} else {echo 'true';}?>" id = "app">
+<div v-show="<?php if ($current_page->title!='home'){echo 'false';} else {echo 'true';}?>" id = "app">
 
            
 <div><label>Search:</label><input style="width:200px;display:inline-block;" class="form-control" v-model="sname" placeholder="enter your searchquery">
