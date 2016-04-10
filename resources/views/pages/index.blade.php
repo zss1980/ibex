@@ -32,7 +32,7 @@
 <label>Records:</label>
 <button style="position:relative; display:inline-block;" type="button" class="btn btn-info" @click="addNewRecord()">@{{addButton}}</button><button style="position:relative; display:inline-block;" type="button" class="btn btn-danger" @click="deleteRecord()">@{{delButton}} </button><a href="#" @click="uncoverCreated()">Created <span class= "badge" v-bind:class="{'progress-bar-danger': bedgeCreated}">@{{isCreated}}</span></a>
 	<a href="#"  @click="uncoverUpdate()">Updated <span class= "badge" v-bind:class="{'progress-bar-danger': bedgeEdite}">@{{isUpdated}}</span></a>
-	<a href="#" @click="uncoverDeleted()">Deleted <span class="badge"v-bind:class="{'progress-bar-danger': badgeDeleted}">@{{isDeleted}}</span></a>
+	<a href="#" @click="uncoverDeleted()">Deleted <span class="badge"v-bind:class="{'progress-bar-danger': badgeDelete}">@{{isDeleted}}</span></a>
 </div>
 <table class="table table-hover table-responsive">
   <thead>
