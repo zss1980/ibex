@@ -156,7 +156,7 @@ events: {
 
       if (this.delCheckBox) {
       
-      alert('to be Deleted' +this.deleteRecords);
+      //alert('to be Deleted' +this.deleteRecords);
       var delMess = {delArray: this.deleteRecords}
       this.deleteFromServer(delMess);
 
