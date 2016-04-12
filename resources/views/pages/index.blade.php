@@ -23,7 +23,8 @@
 </style>
 @stop
 @section('body')
-<h1>Hello, IBEX!</h1>
+<h1>Hello, Customer!</h1>
+<h3 style="color:red;"> To update record use "Tab" or "Enter" key</h3>
 
 <div v-show="<?php if ($current_page->title!='home'){echo 'false';} else {echo 'true';}?>" id = "app">
 
